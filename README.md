@@ -1,4 +1,4 @@
-number-primitive
+Number Primitive
 ===
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Dependencies][dependencies-image]][dependencies-url]
 
@@ -17,18 +17,37 @@ For use in the browser, use [browserify](https://github.com/substack/node-browse
 ## Usage
 
 ``` javascript
-var foo = require( 'validate.io-number-primitive' );
+var isNumber = require( 'validate.io-number-primitive' );
 ```
 
-#### foo( value )
+#### isNumber( value )
 
-What does this function do?
+Validates if a `value` is a `number` primitive, excluding `NaN`.
+
+``` javascript
+var value = Math.PI;
+
+var bool = isNumber( value );
+// returns true
+```
 
 
 ## Examples
 
 ``` javascript
-var foo = require( 'validate.io-number-primitive' );
+var isNumber = require( 'validate.io-number-primitive' );
+
+console.log( isNumber( Math.PI ) );
+// returns true
+
+console.log( isNumber( NaN ) );
+// returns false
+
+console.log( isNumber( new Number( 5 ) ) );
+// returns false
+
+console.log( isNumber( '5' ) );
+// returns false
 ```
 
 To run the example code from the top-level application directory,

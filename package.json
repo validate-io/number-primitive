@@ -1,7 +1,7 @@
 {
   "name": "validate.io-number-primitive",
   "version": "0.0.0",
-  "description": "Validates if a value is a number primitive.",
+  "description": "Validates if a value is a number primitive, excluding NaN.",
   "author": {
     "name": "Athan Reines",
     "email": "kgryte@gmail.com"
@@ -26,7 +26,12 @@
     "validate.io",
     "validate",
     "validation",
-    "validator"
+    "validator",
+    "valid",
+    "number",
+    "primitive",
+    "is",
+    "isnumber"
   ],
   "bugs": {
     "url": "https://github.com/validate-io/number-primitive/issues"
