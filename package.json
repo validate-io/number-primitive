@@ -1,6 +1,6 @@
 {
   "name": "validate.io-number-primitive",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Validates if a value is a number primitive, excluding NaN.",
   "author": {
     "name": "Athan Reines",
